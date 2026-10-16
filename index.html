@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hermes AI Agent — Autonomous Wealth Engine · Status</title>
+<meta name="description" content="Live status dashboard for an autonomous agent
+engine: agent squads, a 60-day paper-trading ledger, and US Congress STOCK Act
+signal detection.">
+<style>
+:root{--bg:#0a0e13;--card:#111a23;--line:#1e2b39;--fg:#d7e2ee;--mut:#7d8fa3;
+      --acc:#69d2ff;--ok:#4ade80;--bad:#f87171;--warn:#f2c879}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);margin:0;
+     font:13px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+a{color:var(--acc)}
+header{border-bottom:1px solid var(--line);padding:26px 20px 18px;background:#0d141b}
+h1{font-size:21px;margin:0 0 6px}
+h2{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--acc);
+   margin:30px 0 10px}
+.sub{color:var(--mut);max-width:900px}
+nav{display:flex;gap:2px;border-bottom:1px solid var(--line);padding:0 20px;
+    background:#0e141b;position:sticky;top:0;z-index:9;overflow-x:auto}
+nav button{font:inherit;background:none;border:0;border-bottom:2px solid transparent;
+           color:var(--mut);padding:12px 14px;cursor:pointer;white-space:nowrap}
+nav button:hover{color:var(--fg)}
+nav button.on{color:var(--acc);border-bottom-color:var(--acc)}
+main{padding:8px 20px 70px;max-width:1450px}
+section{display:none} section.on{display:block}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(175px,1fr));gap:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:13px}
+.k{color:var(--mut);font-size:10px;text-transform:uppercase;letter-spacing:.06em}
+.v{font-size:19px;margin-top:3px}
+table{width:100%;border-collapse:collapse;font-size:12px;margin-top:4px}
+th,td{text-align:left;padding:6px 8px;border-bottom:1px solid #1b2632;
+      vertical-align:top}
+th{color:var(--mut);font-weight:500}
+.ok{color:var(--ok)} .bad{color:var(--bad)} .warn{color:var(--warn)}
+.note{background:#2a1f10;border:1px solid #6b4a13;border-radius:9px;padding:13px;
+      color:var(--warn);margin:16px 0}
+.meter{height:8px;background:#1b2632;border-radius:4px;overflow:hidden;margin-top:7px}
+.meter>i{display:block;height:100%;background:var(--acc)}
+.pill{display:inline-block;padding:1px 8px;border-radius:10px;
+      border:1px solid var(--line);font-size:10px;color:var(--mut)}
+code{color:var(--acc)}
+footer{color:#5c6b7a;font-size:11px;padding:22px 20px 40px;
+       border-top:1px solid var(--line);margin-top:30px}
+</style></head><body>
+<header>
+  <h1>Hermes AI Agent — Autonomous Wealth Engine</h1>
+  <div class="sub">Objective: maximise legitimate internet income from
+  EUR 50.00 starting capital · generated 2026-10-16T21:50:10.499474+00:00 · day 1 of the 60-day
+  paper-trading simulation lock</div>
+</header>
+<nav>
+  <button data-t="overview">Overview</button>
+  <button data-t="telemetry">Telemetry</button>
+  <button data-t="quant">Quant &amp; Congress</button>
+  <button data-t="agents">Agent Squads</button>
+  <button data-t="approvals">Proposals</button>
+  <button data-t="about">About &amp; Method</button>
+</nav>
+<main>
+
+<div class="note"><b>Honest status.</b> The engine and its ledger run fully
+autonomously <i>locally</i> — self-scheduled, self-audited, zero cloud-token
+spend. It holds <b>no brokerage, exchange, payment-processor or hosting
+credentials</b>, so recorded real revenue is <b>EUR 0.00</b> and Division 2 is a
+<b>simulated paper ledger</b>. Every revenue channel it has designed terminates
+in a step that only a verified human can complete. Those are listed below rather
+than dressed up.</div>
+
+<section id="overview" class="on">
+<h2>At a glance</h2>
+<div class="grid">
+ <div class="card"><div class="k">Real revenue</div><div class="v">EUR 0.00</div>
+   <div class="k">no payout rail on this host</div></div>
+ <div class="card"><div class="k">Agents</div><div class="v">19</div>
+   <div class="k">19 active</div></div>
+ <div class="card"><div class="k">Congress signals</div><div class="v">104</div>
+   <div class="k">6 members tracked</div></div>
+ <div class="card"><div class="k">Wiki pages</div><div class="v">7</div>
+   <div class="k">7 raw sources</div></div>
+ <div class="card"><div class="k">Simulation</div><div class="v">day 1</div>
+   <div class="k">59 days until Day-61 review</div></div>
+ <div class="card"><div class="k">Cloud API spend</div><div class="v">$0.0000</div>
+   <div class="k">of $5.00 monthly cap</div></div>
+</div>
+
+<h2>Division 2 — 60-day paper-trading ledger</h2>
+<table>
+<tr><th>Portfolio</th><th>Start</th><th>Trades</th><th>Closed</th>
+    <th>Net PnL</th><th>Equity</th><th>Return</th></tr>
+<tr><td>MICRO_50</td><td>EUR 50.00</td><td>1</td><td>0</td>
+    <td>EUR 0.0000</td><td>EUR 50.0000</td><td>0.0000%</td></tr>
+<tr><td>BENCHMARK_1000</td><td>EUR 1000.00</td><td>1</td><td>0</td>
+    <td>EUR 0.0000</td><td>EUR 1000.0000</td><td>0.0000%</td></tr>
+</table>
+<div class="sub">Every simulated fill deducts commission, bid-ask spread,
+slippage and gas. Live execution on Day 61 requires a &gt;60% post-fee win rate
+and a positive Sharpe ratio — <i>and</i> a funded, KYC-verified brokerage
+account, which does not exist. Nothing here trades real money.</div>
+</section>
+
+<section id="telemetry">
+<h2>Host &amp; budget</h2>
+<div class="grid">
+ <div class="card"><div class="k">Platform</div><div class="v">Darwin</div>
+   <div class="k">arm64 · 8 cores</div></div>
+ <div class="card"><div class="k">RAM</div><div class="v">16.0 GiB</div>
+   <div class="k">local-model budget 9.6 GiB</div></div>
+ <div class="card"><div class="k">Disk free</div><div class="v">197.99 GiB</div>
+   <div class="k">21.37% free</div></div>
+ <div class="card"><div class="k">Local SLM</div><div class="v">qwen2.5:1.5b</div>
+   <div class="k">zero-token inference</div></div>
+ <div class="card"><div class="k">Skills tracked</div><div class="v">68</div>
+   <div class="k">548-day expiry policy</div></div>
+ <div class="card"><div class="k">Tracked sources</div><div class="v">37</div>
+   <div class="k">SHA-256 change cache</div></div>
+</div>
+<h2>Paid cloud API budget (2026-10)</h2>
+<div class="card"><div class='meter'><i style='width:0.0%'></i></div>
+ <div class="k" style="margin-top:7px">$0.0000 of $5.00 used · when exhausted,
+ turns route to the local model instead of stopping</div></div>
+<h2>Knowledge base growth</h2>
+<table><tr><th>Category</th><th>Pages</th></tr><tr><td>Market_Catalysts</td><td>1</td></tr><tr><td>Congress_And_Whales</td><td>4</td></tr><tr><td>Internet_Money_Methods</td><td>1</td></tr><tr><td>Training_Portals</td><td>0</td></tr><tr><td>Agent_Hall_Of_Fame</td><td>0</td></tr><tr><td>Failed_Experiments</td><td>0</td></tr><tr><td>Treasury_And_Payments</td><td>0</td></tr><tr><td>GitHub_Tools</td><td>1</td></tr></table>
+</section>
+
+<section id="quant">
+<h2>Congress STOCK Act detection</h2>
+<div class="sub">Source: the Clerk of the House's published Periodic Transaction
+Reports (STOCK Act filings). These are public documents; the engine indexes the
+filing directory and parses the transaction tables from the disclosure PDFs.
+Disclosure range: 10/14/2026 to 10/15/2026.</div>
+<div class="grid">
+ <div class="card"><div class="k">House PTR signals</div><div class="v">104</div></div>
+ <div class="card"><div class="k">Members</div><div class="v">6</div></div>
+ <div class="card"><div class="k">Prediction-market whales</div><div class="v">0</div>
+   <div class="k">derived from public trade flow</div></div>
+</div>
+<h2>Most recent detected transactions</h2>
+<table><tr><th>Member</th><th>Asset</th><th>Type</th><th>Amount</th>
+<th>Disclosed</th></tr><tr><td>Richard Dean Dr McCormick</td><td>NAME:Berkshire Hathaway Inc. New Co</td><td>BUY</td><td>USD 8,000</td><td>10/14/2026</td></tr><tr><td>Mike Kelly</td><td>NAME:Victoria Kelly Trust ICA SP Ca</td><td>BUY</td><td>USD 75,000</td><td>10/14/2026</td></tr><tr><td>Mike Kelly</td><td>NAME:SP Black Belt Energy Gas Dist </td><td>BUY</td><td>USD 32,500</td><td>10/14/2026</td></tr><tr><td>Suzan K. DelBene</td><td>NAME:JT TX Trans Commn TPK 5% Tran </td><td>BUY</td><td>USD 32,500</td><td>10/14/2026</td></tr><tr><td>Suzan K. DelBene</td><td>NAME:JT Triborough Bridge &amp; 4% SPL </td><td>SELL</td><td>USD 375,000</td><td>10/14/2026</td></tr><tr><td>Suzan K. DelBene</td><td>NAME:JT Black Belt Energy Gas Dist </td><td>BUY</td><td>USD 375,000</td><td>10/14/2026</td></tr><tr><td>Richard W. Allen</td><td>COST</td><td>SELL</td><td>USD 8,000</td><td>10/14/2026</td></tr><tr><td>Richard W. Allen</td><td>AZO</td><td>SELL</td><td>USD 32,500</td><td>10/14/2026</td></tr><tr><td>David J. Taylor</td><td>RPM</td><td>BUY</td><td>USD 8,000</td><td>10/15/2026</td></tr><tr><td>David J. Taylor</td><td>PG</td><td>SELL</td><td>USD 8,000</td><td>10/15/2026</td></tr><tr><td>David J. Taylor</td><td>FITB</td><td>BUY</td><td>USD 8,000</td><td>10/15/2026</td></tr><tr><td>David J. Taylor</td><td>T</td><td>BUY</td><td>USD 8,000</td><td>10/15/2026</td></tr></table>
+<div class="sub">Detection rules applied: the <b>Cluster Rule</b> (3+ members
+buying the same asset inside a 14-day window) and a <b>Committee Alignment
+Filter</b> cross-referencing each trade against the member's committee
+assignments. A cluster only triggers research into <i>why</i> — it is never
+treated as a recommendation.</div>
+</section>
+
+<section id="agents">
+<h2>Agent roster — fitness score 0–1000</h2>
+<div class="sub">Every agent is re-scored after each run on validated revenue,
+compiled intelligence, token efficiency and self-evolution rate. Above 800 is
+archived to a Hall of Fame; below 300 is terminated with a written post-mortem.</div>
+<table><tr><th>Agent</th><th>Role</th><th>Division</th><th>Version</th>
+<th>Fitness</th><th>Status</th></tr><tr><td>coordinator-alpha</td><td>coordinator</td><td>TIER_1_COORDINATION</td><td>v1</td><td>500.0</td><td class='ok'>ACTIVE</td></tr><tr><td>coordinator-beta</td><td>critic</td><td>TIER_1_COORDINATION</td><td>v1</td><td>500.0</td><td class='ok'>ACTIVE</td></tr><tr><td>structure-optimizer</td><td>optimizer</td><td>TIER_2_META</td><td>v1</td><td>500.0</td><td class='ok'>ACTIVE</td></tr><tr><td>sota-auditor</td><td>auditor</td><td>TIER_2_META</td><td>v1</td><td>500.0</td><td class='ok'>ACTIVE</td></tr><tr><td>treasury-architect</td><td>treasury</td><td>TIER_3_TREASURY</td><td>v1</td><td>500.0</td><td class='ok'>ACTIVE</td></tr><tr><td>opportunity-scout-a</td><td>scout</td><td>DIVISION_1_WEB_VENTURES</td><td>v1</td><td>500.0</td><td class='ok'>ACTIVE</td></tr><tr><td>opportunity-scout-b</td><td>scout</td><td>DIVISION_1_WEB_VENTURES</td><td>v1</td><td>500.0</td><td class='ok'>ACTIVE</td></tr><tr><td>method-researcher</td><td>researcher</td><td>DIVISION_1_WEB_VENTURES</td><td>v1</td><td>500.0</td><td class='ok'>ACTIVE</td></tr><tr><td>implementation-squad</td><td>implementer</td><td>DIVISION_1_WEB_VENTURES</td><td>v1</td><td>500.0</td><td class='ok'>ACTIVE</td></tr><tr><td>tool-commercializer</td><td>implementer</td><td>DIVISION_1_WEB_VENTURES</td><td>v1</td><td>500.0</td><td class='ok'>ACTIVE</td></tr><tr><td>bounty-hunter</td><td>implementer</td><td>DIVISION_1_WEB_VENTURES</td><td>v1</td><td>500.0</td><td class='ok'>ACTIVE</td></tr><tr><td>macro-scraper</td><td>scraper</td><td>DIVISION_2_QUANT_TRADING</td><td>v1</td><td>500.0</td><td class='ok'>ACTIVE</td></tr><tr><td>contract-scraper</td><td>scraper</td><td>DIVISION_2_QUANT_TRADING</td><td>v1</td><td>500.0</td><td class='ok'>ACTIVE</td></tr><tr><td>whale-copy-trader</td><td>analyst</td><td>DIVISION_2_QUANT_TRADING</td><td>v1</td><td>500.0</td><td class='ok'>ACTIVE</td></tr><tr><td>congress-tracker</td><td>analyst</td><td>DIVISION_2_QUANT_TRADING</td><td>v1</td><td>500.0</td><td class='ok'>ACTIVE</td></tr><tr><td>causal-reverse-engineer</td><td>analyst</td><td>DIVISION_2_QUANT_TRADING</td><td>v1</td><td>500.0</td><td class='ok'>ACTIVE</td></tr><tr><td>bull-researcher</td><td>researcher</td><td>DIVISION_2_QUANT_TRADING</td><td>v1</td><td>500.0</td><td class='ok'>ACTIVE</td></tr><tr><td>bear-researcher</td><td>researcher</td><td>DIVISION_2_QUANT_TRADING</td><td>v1</td><td>500.0</td><td class='ok'>ACTIVE</td></tr><tr><td>kelly-risk-manager</td><td>adjudicator</td><td>DIVISION_2_QUANT_TRADING</td><td>v1</td><td>500.0</td><td class='ok'>ACTIVE</td></tr></table>
+</section>
+
+<section id="approvals">
+<h2>Proposals awaiting a human decision</h2>
+<div class="sub">Each proposal carries a 30/60/90-day earnings prediction and an
+approval reference. Full risk assessments are held in the private ledger, not
+published here.</div>
+<table><tr><th>Proposal</th><th>30d</th><th>60d</th><th>90d</th><th>Budget</th>
+<th>Status</th></tr><tr><td>Commit capacity: local SLM install to remove paid-API dependency</td><td>0</td><td>0</td><td>0</td><td>EUR 0</td><td><span class='pill'>PENDING</span></td></tr><tr><td>Treasury blueprint: EUR 50 payment rails for autonomous payouts</td><td>0</td><td>120</td><td>600</td><td>EUR 0</td><td><span class='pill'>APPROVED</span></td></tr></table>
+</section>
+
+<section id="about">
+<h2>How it works</h2>
+<p><b>Token discipline.</b> The supervisor makes no LLM calls of its own. All
+scraping, hashing, parsing, indexing and static builds are deterministic local
+code. Before any external payload is processed, its SHA-256 is compared against
+a local ledger — an unchanged internet costs exactly zero tokens. A hard monthly
+cap governs paid API spend; when it is reached, work is rerouted to a local
+language model rather than stalling.</p>
+<p><b>Immutable source layer.</b> Every retrieved payload is written to an
+append-only <code>raw/</code> directory before synthesis, so any summarised page
+can be re-derived from an untouched record.</p>
+<p><b>Degradation, not silence.</b> Each data source reports
+<code>count / cached / stale / error</code> provenance. A transient rate-limit
+serves the last known good payload flagged as stale — an empty result is never
+allowed to masquerade as "no data".</p>
+<p><b>Self-evolution.</b> Agents version themselves after every task: telemetry
+critique, prompt mutation, tool extraction, version increment. The history is
+append-only and auditable.</p>
+<p><b>What it cannot do.</b> It cannot open accounts, pass identity
+verification, accept a payout, or fund a brokerage. Those are the only things
+standing between this system and its first euro, and they require a person.</p>
+</section>
+
+</main>
+<footer>
+  Auto-generated from the live local ledger at 2026-10-16T21:50:10.499474+00:00. No credentials, credentials
+  state, email addresses, hostnames or filesystem paths are published on this
+  page by construction. Paper-trading figures are simulated; Congress data is
+  public-record.
+</footer>
+<script>
+const tabs=[...document.querySelectorAll('nav button')];
+function show(id){tabs.forEach(b=>b.classList.toggle('on',b.dataset.t===id));
+  document.querySelectorAll('section').forEach(s=>
+    s.classList.toggle('on',s.id===id));
+  location.hash=id;}
+tabs.forEach(b=>b.addEventListener('click',()=>show(b.dataset.t)));
+show((location.hash||'#overview').slice(1));
+</script>
+</body></html>
